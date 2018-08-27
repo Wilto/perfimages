@@ -23,10 +23,12 @@ body {
 	margin: 0;
 	padding: 0;
 }
-img {
+img,
+svg {
 	max-width: 100%;
 	height: auto;
 }
+
 a {
 
 }
@@ -46,4 +48,93 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
 	max-width: 100%;
+}
+
+/* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+.a11y-only {
+	border: 0;
+	clip: rect(1px 1px 1px 1px);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	min-width: 1px;
+	max-width: 1px;
+}
+.a11y-only.focusable:active,
+.a11y-only.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+body > div {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
+main {
+	padding: 2.5em 3.5% 7.5em 3.5%;
+	margin: 0 auto;
+	font-size: 1.3em;
+	line-height: 1.3;
+}
+
+main p {
+	max-width: 50em;
+}
+
+body > .site-foot {
+	grid-row: 4;
+}
+.site-head,
+.site-foot {
+	color: rgba(255,255,255,.95);
+	background: #ee6265;
+	padding: 1.5em 2.5% .5em 2.5%;
+	position: relative;
+}
+
+.site-head {
+	clip-path: polygon(0 0, 100% 0, 100% calc( 100% - 2.5em ), 0% 100%);
+	max-height: 30em;
+}
+
+.site-foot {
+	clip-path: polygon(0 calc( 0% + 2.5em ), 100% 0, 100% 100%, 0% 100%);
+	padding: 5em 2.5% 2em 2.5%;
+}
+
+.site-head h1:after {
+	content: "";
+	display: block;
+	position: relative;
+	margin-top: 2.25vw;
+	border-bottom: 4px solid #471b1b;
+	width: 100%;
+	max-width: 8em;
+}
+
+.site-head svg {
+	max-width: 30em;
+}
+
+.byline {
+	margin: 1em 0 2.5em 0;
+}
+
+.bio-hed {
+	margin-bottom: 1em;
+}
+
+.bio p {
+	font-size: 1.2em;
+	line-height: 1.3;
+	max-width: 45em;
 }

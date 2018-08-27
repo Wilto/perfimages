@@ -4,6 +4,7 @@
   "description": "It’s not a food blog.",
   "author": {
     "name": "Mat Marquis",
-    "email": "mat@matmarquis.com"
+    "email": "mat@matmarquis.com",
+    "bio": "Eh? Eh?"
   }
 }
