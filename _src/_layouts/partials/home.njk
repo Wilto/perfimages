@@ -9,8 +9,10 @@ templateClass: tmpl-home
 
 {% if lede %}
 <div class="lede">
-	{{ lede | safe }}
+	<p>{{ lede | safe }}</p>
 </div>
 {% endif %}
 
 {{ layoutContent | safe }}
+
+<a class="cta" href="https://abookapart.com/products/">Preorder Now!</a>
