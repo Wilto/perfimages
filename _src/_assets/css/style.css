@@ -1,0 +1,49 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+::selection { 
+	text-shadow: none;
+	background: rgba(255,150,0, .2);
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+
+}
+a:hover {
+	
+}
+a:active {
+	
+}
+/* https://drafts.csswg.org/selectors-4/#the-blank-pseudo */
+p:empty,
+p:blank {
+	display: none;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	max-width: 100%;
+}

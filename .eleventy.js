@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig) {
-  //eleventyConfig.addPassthroughCopy("_src/_assets/img");
+  eleventyConfig.addPassthroughCopy("_src/_assets");
 
   return {
     templateFormats: [
