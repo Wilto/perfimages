@@ -7,5 +7,10 @@ templateClass: tmpl-home
 <h2>{{ title | safe }}</h2>
 {% endif %}
 
+{% if lede %}
+<div class="lede">
+	{{ lede | safe }}
+</div>
+{% endif %}
 
 {{ layoutContent | safe }}
