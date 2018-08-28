@@ -204,9 +204,51 @@ body > .site-foot {
 	position: relative;
 }
 
+
 .site-head {
 	clip-path: polygon(0 0, 100% 0, 100% calc( 100% - 2.5em ), 0% 100%);
 	position: relative;
+	border-top: .5em solid #fff;
+}
+
+@media( min-width: 50em ) {
+	body > div {
+		padding: 1.5vw 1.5vw 0  1.5vw;
+	}
+	.site-head {
+		border: none;
+	}
+}
+
+.site-head:before {
+	content: "8";
+	color: #000;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 2.5em;
+	border-radius: 50%;
+	top: -.5em;
+	left: 50%;
+	background: #fff;
+	width: 2em;
+	height: 2em;
+	font-size: 1.5em;
+	margin-left: -1em;
+	z-index: 9;
+	font-family: "opensans", sans-serif;
+}
+@media( min-width: 40em ) {
+	.site-head:before {
+		font-size: 3.5vw;
+	}
+}
+@media( min-width: 65em ) {
+	.site-head:before {
+		font-size: 2.5em;
+	}
 }
 .buynav {
 	color: #fff;
@@ -217,8 +259,8 @@ body > .site-foot {
 	top: 0;
 	width: 100%;
 	font-size: .9em;
-	background:  rgba(80,30,30,1);
-	padding: .75em 5% .55em 5%;
+	background: #fff;
+	padding: .5em 5% .25em 5%;
 	z-index: 2;
 	text-shadow: 0 1px 2px  rgba(0,0,0,.8);
 	font-family: "Open Sans", sans-serif;
@@ -260,17 +302,58 @@ body > .site-foot {
 	border-bottom: .25em solid rgba(0,0,0,.7);
 	background: rgba(80,30,30,1);
 }
+@media( min-width: 50em ) {
+	.site-foot {
+		border-bottom: 1.25vw solid #fff;
+	}
+}
 .site-head h1:after {
 	content: "";
 	display: block;
 	position: relative;
 	margin-top: 2.25vw;
 	border-bottom: 4px solid #471b1b;
-	width: 100%;
+	width: 75%;
 	max-width: 8em;
 }
 
-.site-head {}
+.topwrap {
+	position: relative;
+}
+
+.cover {
+	border: 1px solid #ddd;
+	top: 67.5%;
+	z-index: 3;
+	position: absolute;
+	right: 4%;
+	width: 6.8em;
+	max-width: 27.5%;
+}
+
+@media( min-width: 35em ) {
+	.cover {
+		max-width: 20em;
+		bottom: auto;
+		width: 25%;
+		margin-top: 2.5em;
+		top: 5vw;
+		right: 5%;
+	}
+}
+
+@media( min-width: 70em ) {
+	.cover {
+		margin-top: 0;
+		top: 5vw;
+	}
+}
+
+@media(min-width: 35em ) {
+	.site-hed {
+		max-width: 70%;
+	}
+}
 
 .site-head svg {
 	max-width: 30em;
@@ -279,6 +362,7 @@ body > .site-foot {
 
 .byline {
 	margin: 1em 0;
+	max-width: 70%;
 }
 
 .bio-hed {
