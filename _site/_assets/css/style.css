@@ -312,7 +312,7 @@ body > .site-foot {
 	display: block;
 	position: relative;
 	margin-top: 2.25vw;
-	border-bottom: 4px solid #471b1b;
+	border-bottom: 2px solid #471b1b;
 	width: 75%;
 	max-width: 8em;
 }
