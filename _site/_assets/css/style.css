@@ -51,9 +51,11 @@ a {
 a:hover {
 	
 }
-a:active {
-	
+a:focus {
+	outline: 2px dotted rgba(241,110,115, .85);
+	text-decoration: none;
 }
+
 
 code {
 	background: #fafafa;
@@ -96,6 +98,25 @@ body {
 	overflow: visible;
 	position: static;
 	width: auto;
+}
+
+.skiplink {
+	color: #fff;
+	background: #000;
+	white-space: nowrap;
+	display: block;
+
+	padding: .25em .5em;
+	max-width: 20em;
+	font-family: "opensans", sans-serif;
+	text-decoration: none;
+}
+.skiplink.focusable:active,
+.skiplink.focusable:focus{
+	position: absolute;
+	top: .225em;
+	left: .225em;
+	z-index: 3;
 }
 
 body > div {
@@ -333,10 +354,16 @@ body > .site-foot {
 	border: 2px solid #471c1c;
 	color: #fff;
 	text-shadow: 1px 1px 0  rgba(0,0,0,.5);
-
 }
 .cta:hover:after,
 .cta:focus:after {
 	left: -10%;
 	width: 120%;
+}
+.cta:active {
+	position: relative;
+	bottom: -1px;
+}
+.cta:focus {
+	outline: none;
 }
