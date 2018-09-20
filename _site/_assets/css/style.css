@@ -310,6 +310,11 @@ body > .site-foot {
 	border-bottom: .25em solid rgba(0,0,0,.7);
 	background: rgba(80,30,30,1);
 }
+.site-foot:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 @media( min-width: 50em ) {
 	.site-foot {
 		border-bottom: 1.25vw solid #fff;
@@ -382,28 +387,70 @@ body > .site-foot {
 	font-size: 1.25em;
 }
 
-.bio p {
+@media( min-width: 65em ) {
+	.bio {
+		float: right;
+		max-width: 55%;
+	}
+	.blurbs {
+		float: left;
+		max-width: 42.5%;
+	}
+}
+
+
+.site-foot p {
 	line-height: 1.45;
 	max-width: 45em;
 	color: rgba(255,255,255,.9);
 }
 @media(min-width: 30em ) {
-	.bio {
+	.site-foot > div {
 		font-size: 3.35vw;
 	}
 }
 @media( min-width: 39em ) {
-	.bio {
+	.site-foot > div {
 		font-size: 1.35em;
 	}
 }
 
-.bio a {
+.blurbs {
+	padding-bottom: 3.5em;
+}
+
+.blurbs cite {
+	font-style: normal;
+}
+.blurbs .title {
+	display: block;
+	padding-top: .2em;
+	font-style: italic;
+	color: rgba(255,255,255,.9);
+	font-size: .9em;
+}
+
+.blurbs blockquote {
+	padding: 0;
+	margin: 0;
+}
+
+.blurbs blockquote + blockquote:before {
+	content: "";
+	background: #f06e71;
+	width: 25%;
+	height: 2px;
+	margin: 1.25em auto 1em auto;
+	display: block;
+	border-radius: 2px;
+}
+
+.site-foot a {
 	color: #fff;
 	transition: text-decoration-color .1s linear;
 	text-decoration-color: #f06e71;
 }
-.bio a:hover {
+.site-foot a:hover {
 	text-decoration-color: transparent;
 }
 
