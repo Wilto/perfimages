@@ -228,8 +228,7 @@ body > .site-foot {
 	}
 }
 
-.site-head:before {
-	content: "8";
+.volume {
 	color: #000;
 	position: absolute;
 	display: flex;

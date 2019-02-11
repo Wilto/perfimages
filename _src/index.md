@@ -1,5 +1,9 @@
 ---
-layout: partials/home.njk
+title: Image Performance
+byline: Mat Marquis
+volume: 8
+href: https://abookapart.com/products/image-performance
+cover: _assets/img/book-cover.gif
 lede: "That fact that you’re reading this tells me something about you. It tells me that you’re different from the way I once was."
 ---
 
