@@ -4,5 +4,7 @@
   "author": {
     "name": "Mat Marquis",
     "twitter": "@wilto"
-  }
+  },
+  "color" : "#ee6265",
+  "colordark" : "#501e1e"
 }

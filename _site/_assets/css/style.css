@@ -51,19 +51,8 @@ svg {
 }
 
 a {
-	color: #4d1f1f;
-	text-decoration-color: rgba(241,110,115, 1);
 	transition: color .1s linear, text-decoration-color .1s linear;
 }
-a:hover {
-	color: #913737;
-	text-decoration-color: rgba(241,110,115, .5);
-}
-a:focus {
-	outline: 2px dotted rgba(241,110,115, .85);
-	text-decoration: none;
-}
-
 
 code {
 	background: #fafafa;
@@ -157,7 +146,7 @@ main p {
 }
 p {
 	font-family: "goudy";
-	color: #340304;
+	color: #333;
 }
 
 }
@@ -177,10 +166,10 @@ p {
 .lede p {
 	max-width: 100%;
 	padding: 0;
-	color: #2b0102;
+	color: #333;;
 }
 .lede:after {
-	background: #471b1b;
+	background: #111;
 	content: "";
 	display: block;
 	position: relative;
@@ -207,7 +196,7 @@ body > .site-foot {
 .site-head,
 .site-foot {
 	color: rgba(255,255,255,.95);
-	background: #ee6265;
+	background: #999;
 	padding: 4.25em 5% 3.5em 5%;
 	position: relative;
 }
@@ -307,7 +296,7 @@ body > .site-foot {
 	clip-path: polygon(0 calc( 0% + 2.5em ), 100% 0, 100% 100%, 0% 100%);
 	padding: 6.5em 10% 2em 2.5%;
 	border-bottom: .25em solid rgba(0,0,0,.7);
-	background: rgba(80,30,30,1);
+	background: #111;
 }
 .site-foot:after {
 	content: "";
@@ -436,7 +425,6 @@ body > .site-foot {
 
 .blurbs blockquote + blockquote:before {
 	content: "";
-	background: #f06e71;
 	width: 25%;
 	height: 2px;
 	margin: 1.25em auto 1em auto;
@@ -447,7 +435,6 @@ body > .site-foot {
 .site-foot a {
 	color: #fff;
 	transition: text-decoration-color .1s linear;
-	text-decoration-color: #f06e71;
 }
 .site-foot a:hover {
 	text-decoration-color: transparent;
@@ -456,7 +443,7 @@ body > .site-foot {
 .cta {
 	background: rgba(255,150,0, .05);
 	display: block;
-	padding: .6em 1em .5em 1em;
+	padding: .65em 1em .45em 1em;
 	width: 50%;
 	font-size: .85em;
 	min-width: 12.5em;
@@ -464,8 +451,7 @@ body > .site-foot {
 	text-align: center;
 	margin: 5em auto 0 auto;
 	color: #471c1c;
-	background: #f6d7d8;
-	border: 2px solid #f06e71;
+	border: 2px solid;
 	transition: all .2s ease-in-out;
 	overflow: hidden;
 	position: relative;
@@ -483,13 +469,12 @@ body > .site-foot {
 		bottom: 0;
 		top: 0;
 		bottom: -1px;
-		background: #f06e71;
 		transform: skewX(25deg);
 		z-index: -1;
 	}
 	.cta:hover,
 	.cta:focus {
-		border: 2px solid #471c1c;
+		border: 2px solid;
 		color: #fff;
 		text-shadow: 1px 1px 0  rgba(0,0,0,.5);
 	}
