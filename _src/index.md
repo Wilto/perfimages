@@ -4,6 +4,8 @@ byline: Mat Marquis
 volume: 8
 href: https://abookapart.com/products/image-performance
 cover: _assets/img/book-cover.gif
+cta: "Pre-order Now!"
+ctanote: "On sale 1/1/1900!"
 lede: "That fact that you’re reading this tells me something about you. It tells me that you’re different from the way I once was."
 ---
 

@@ -11,15 +11,15 @@
 
 		<!-- Twitter Card Stuff: -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@wilto">
+		<meta name="twitter:site" content="{{ metadata.author.twitter }}">
 		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta property="og:title" content="{{ metadata.title }}">
-		<meta property="og:url" content="https://wiltomakesfood.com{{page.url}}">
+		<meta property="og:url" content="{{ page.url }}">
 		<meta property="og:description" content="{{ lede }}">
-		<meta property="og:image" content="https://matmarquis.com/_assets/img/book-crop-new.gif">
-		<meta property="og:image:alt" content="Cover of Image Performance, published by A Book Apart, written by Mat Marquis, foreword by Ethan Marcotte.">
+		<meta property="og:image" content="/_assets/img/book-tease.gif">
+		<meta property="og:image:alt" content="Cover of {{ title | safe }}, published by A Book Apart, written by {{ byline | safe }}.">
 		<meta property="og:type" content="article">
-		<meta name="author" content="Mat Marquis">
+		<meta name="author" content="{{ metadata.author.name }}">
 
 		<link rel="stylesheet" href="/_assets/css/style.css">
 	</head>
@@ -55,6 +55,13 @@
 				{% endif %}
 
 				{{ layoutContent | safe }}
+
+				{% if cta %}{% if href %}
+				<a class="cta" href="{{ href }}">{{ cta }}</a>
+				{% endif %}{% endif %}
+				{% if ctanote %}
+				<p class="note">{{ ctanote | safe }}</p>
+				{% endif %}
 			</main>
 
 			<footer class="site-foot">
