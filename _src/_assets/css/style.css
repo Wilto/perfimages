@@ -5,14 +5,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-@font-face {
-	font-family: 'goudy';
-	src: url('/_assets/fonts/goudy.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
 
 * {
 	-webkit-box-sizing: border-box;
@@ -142,10 +134,11 @@ main p {
 	max-width: 40em;
 	padding: .65em 10% .65em 5%;
 	margin: 0 auto;
-	font-size: 1.1em;
+	font-size: 1em;
+	line-height: 1.5;
 }
 p {
-	font-family: "goudy";
+	font-family: georgia, "Times New Roman", times, serif;
 	color: #333;
 }
 
