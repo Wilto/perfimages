@@ -1,0 +1,25 @@
+{
+  "name": "everydayIA",
+  "version": "0.0.1",
+  "description": "a book website",
+  "scripts": {
+    "dev": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Wilto/perfimages.git"
+  },
+  "author": {
+    "name": "Mat Marquis",
+    "email": "mat@matmarquis.com",
+    "url": "http://matmarquis.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wilto/perfimages/issues"
+  },
+  "homepage": "https://hire.wil.to",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1",
+  }
+}
