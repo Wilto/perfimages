@@ -7,6 +7,10 @@ module.exports = function(eleventyConfig) {
      });
     });
 
+  eleventyConfig.addCollection("bios", function(collection) {
+    return collection.getFilteredByGlob("**/bio.md");
+  });
+
   return {
     templateFormats: [
       "md",
