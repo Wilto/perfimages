@@ -365,7 +365,7 @@ body > .site-foot {
 .bio-hed {
 	max-width: 15em;
 	margin-bottom: .5em;
-	font-family: Open Sans;
+	font-family: Open Sans, sans-serif;
 	font-size: 1em;
 }
 
