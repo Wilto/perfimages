@@ -1,8 +1,20 @@
 {
-  "title": "Image Performance",
+  "title": "Title of the Book",
   "description": "Coming soon, from A Book Apart!",
+  "cta": "Pre-orders open soon!",
+  "url" : "http://book.teaser.url",
+  "abaurl" : "https://abookapart.com/products/the-book-url",
   "author": {
-    "name": "Mat Marquis",
-    "email": "mat@matmarquis.com"
+    "name": "Author Name",
+    "twitter": "@authorname"
+  },
+  "theme": {
+    "color" : "#aaaaaa",
+    "colordark" : "#555555",
+    "cover": "_assets/img/book-cover.png"
+  },
+  "headings" : {
+    "blurbs" : "What People are Saying",
+    "bio" : "About the Author"
   }
 }
