@@ -2,4 +2,4 @@
 title: About the Author
 ---
 
-[Lisa Maria Martin](https://thefutureislikepie.com/) is an independent consultant based in Boston. She practices content-driven information architecture, helping organizations to understand, organize, and structure their web content for empowering user experiences. She is the managing editor of A Book Apart, as well as a writer, speaker, workshop facilitator, and poet.
+[Lorem ipsum dolor]() sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

@@ -1,1 +1,3 @@
-{ "layout" : "partials/blurb.njk" }
+{
+	"layout" : "partials/blurb.njk"
+}

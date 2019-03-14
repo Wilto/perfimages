@@ -1,10 +1,20 @@
 {
-  "title": "Everyday Information Architecture",
+  "title": "Title of the Book",
   "description": "Coming soon, from A Book Apart!",
+  "cta": "Pre-orders open soon!",
+  "url" : "http://book.teaser.url",
+  "abaurl" : "https://abookapart.com/products/the-book-url",
   "author": {
-    "name": "Lisa Maria Martin",
-    "twitter": "@redsesame"
+    "name": "Author Name",
+    "twitter": "@authorname"
   },
-  "color" : "#008b9a",
-  "colordark" : "#00444d"
+  "theme": {
+    "color" : "#aaaaaa",
+    "colordark" : "#555555",
+    "cover": "_assets/img/book-cover.png"
+  },
+  "headings" : {
+    "blurbs" : "What People are Saying",
+    "bio" : "About the Author"
+  }
 }

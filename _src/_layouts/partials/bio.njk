@@ -1,4 +1,6 @@
 <div class="bio">
-    <h2 class="bio-hed">{{ bio.data.title | safe }}</h2>
-    {{ bio.data.content | safe }}
+	{% if metadata.headings.bio %}
+	<h2 class="bio-hed">{{ metadata.headings.bio | safe }}</h2>
+	{% endif %}
+	{{ bio.data.content | safe }}
 </div>

@@ -12,50 +12,50 @@
 		<!-- Twitter Card Stuff: -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="{{ metadata.author.twitter }}">
-		<meta name="twitter:image" content="https://everydayinformationarchitecture.com/_assets/img/book-tease.jpg">
-		<meta property="twitter:image:alt" content="Cover of {{ title | safe }}, published by A Book Apart, written by {{ byline | safe }}.">
+		<meta name="twitter:image" content="{{ metadata.url}}/_assets/img/book-tease.png">
+		<meta property="twitter:image:alt" content="Cover of {{ metadata.byline.title | safe }}, published by A Book Apart, written by {{ metadata.byline.name | safe }}.">
 		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta property="og:title" content="{{ metadata.title }}">
 		<meta property="og:url" content="{{ page.url }}">
 		<meta property="og:description" content="{{ lede }}">
-		<meta property="og:image" content="https://everydayinformationarchitecture.com/_assets/img/book-tease.jpg">
-		<meta property="og:image:alt" content="Cover of {{ title | safe }}, published by A Book Apart, written by {{ byline | safe }}.">
+		<meta property="og:image" content="{{ metadata.url}}/_assets/img/book-tease.png">
+		<meta property="og:image:alt" content="Cover of {{ metadata.byline.title | safe }}, published by A Book Apart, written by {{ metadata.byline.name | safe }}.">
 		<meta property="og:type" content="article">
 		<meta name="author" content="{{ metadata.author.name }}">
 
 		<link rel="stylesheet" href="/_assets/css/style.css">
 
-		{% if metadata.color %}
+		{% if metadata.theme.color %}
 		<style type="text/css">
 			a {
-				color: {{ metadata.color }};
+				color: {{ metadata.theme.color }};
 			}
 			a:focus {
 				outline: 2px dotted rgba(0,0,0,.8);
 			}
 			.site-foot {
-				background: {{ metadata.colordark }};
+				background: {{ metadata.theme.colordark }};
 			}
 			.blurbs blockquote + blockquote:before {
-				background: {{ metadata.color }};
+				background: {{ metadata.theme.color }};
 			}
 
 			.site-foot a {
-				text-decoration-color: {{ metadata.color }};
+				text-decoration-color: {{ metadata.theme.color }};
 			}
 			.cta {
 				color: #fff;
-				border: 2px solid {{ metadata.color }};
-				background: {{ metadata.color }};
-				text-shadow: 1px 1px 0 {{ metadata.colordark }};
+				border: 2px solid {{ metadata.theme.color }};
+				background: {{ metadata.theme.color }};
+				text-shadow: 1px 1px 0 {{ metadata.theme.colordark }};
 			}
 			.cta:hover,
 			.cta:focus {
-				border-color: {{ metadata.colordark }};
-				background: {{ metadata.color }};
+				border-color: {{ metadata.theme.colordark }};
+				background: {{ metadata.theme.color }};
 			}
 			.site-foot {
-				background: {{ metadata.colordark }};
+				background: {{ metadata.theme.colordark }};
 			}
 		</style>
 		{% endif %}
@@ -65,25 +65,21 @@
 
 		<div>
 			<div class="topwrap">
-			<header role="banner" class="site-head"{% if metadata.color %} style="background: {{ metadata.color }};"{% endif %}>
+			<header role="banner" class="site-head"{% if metadata.theme.color %} style="background: {{ metadata.theme.color }};"{% endif %}>
 				<h1 class="site-hed">
 					<svg viewBox="0 0 619 238" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M23.68 103H3.712V.6h19.84v5.504H9.344v42.368h12.288v5.376H9.344v43.648H23.68V103zM50.967.6L40.983 103h-6.784L24.087.6h5.76l7.808 87.296L45.335.6h5.632zM75.31 103H55.342V.6h19.84v5.504H60.974v42.368h12.288v5.376H60.974v43.648H75.31V103zm25.11-75.264c0 8.448-.768 14.72-1.664 17.152-1.024 2.816-2.432 5.632-4.224 6.272l8.192 51.84H96.58l-7.424-50.048-4.224.128V103h-5.504V.6H88.9c6.912 0 9.856 4.608 10.752 11.776.512 4.352.768 7.68.768 15.36zm-6.016 1.024c0-5.76-.384-13.952-.512-15.232-.384-4.224-2.048-7.296-4.992-7.296h-3.84v41.344s2.944 0 4.224-.256c2.304-.256 3.2-2.048 3.712-3.84.896-2.688 1.408-10.368 1.408-14.72zM131.42.6l-11.392 64.64V103h-6.144V65.624L103.131.6h5.76s8.192 49.792 8.32 54.784C117.211 50.136 125.66.6 125.66.6h5.76zm26.007 91.904c-.64 4.992-2.688 10.496-10.752 10.496h-11.136V.6h9.728c7.552 0 11.264 4.096 12.16 10.88.512 4.352.64 30.208.64 38.016 0 8.704 0 37.632-.64 43.008zm-5.504-.768c.256-8.064.256-38.528.256-42.368 0-3.84 0-30.592-.128-34.432-.128-5.76-2.816-8.96-6.272-8.96h-4.608V97.88h6.016c2.432 0 4.608-1.664 4.736-6.144zm16.279-13.44c-.128 1.152-2.176 24.704-2.176 24.704h-5.504L171.017.6h7.168l7.936 102.4h-5.504s-1.664-23.552-1.664-24.704h-10.752zm10.624-4.992c0-.128-3.712-43.52-3.968-46.848-.384-4.48-.768-17.28-.768-17.28s-.256 12.8-.768 17.152c-.384 3.2-4.992 46.848-4.992 46.976h10.496zM213.024.6l-11.392 64.64V103h-6.144V65.624L184.736.6h5.76s8.192 49.792 8.32 54.784c0-5.248 8.448-54.784 8.448-54.784h5.76zM9.472 218h-5.76V115.6h5.76V218zm30.103 0H33.43l-11.136-78.208V218h-5.12V115.6h6.272l10.88 76.416V115.6h5.248V218zm28.055-97.024H53.038v42.496h13.184v5.504H53.038V218h-5.632V115.6H67.63v5.376zm14.614-5.76c7.936 0 11.776 4.48 11.904 16 0 4.864.128 25.216.128 35.328 0 11.008 0 29.568-.128 36.48-.128 10.496-3.584 15.744-11.904 15.744-8.064 0-11.52-4.864-11.648-15.872v-71.552c0-10.496 3.712-16.128 11.648-16.128zm.256 97.792c4.224 0 5.504-3.712 5.76-8.32.256-4.352.256-29.056.256-38.144 0-7.296 0-32.384-.128-36.608-.128-6.144-1.536-8.96-5.888-8.96-4.992 0-5.632 3.712-5.888 9.088-.256 4.352-.128 29.568-.128 36.992 0 8.064-.128 33.024.128 37.632.256 4.992 1.408 8.32 5.888 8.32zm39.703-70.272c0 8.448-.768 14.72-1.664 17.152-1.024 2.816-2.432 5.632-4.224 6.272l8.192 51.84h-6.144l-7.424-50.048-4.224.128V218h-5.504V115.6h9.472c6.912 0 9.856 4.608 10.752 11.776.512 4.352.768 7.68.768 15.36zm-6.016 1.024c0-5.76-.384-13.952-.512-15.232-.384-4.224-2.048-7.296-4.992-7.296h-3.84v41.344s2.944 0 4.224-.256c2.304-.256 3.2-2.048 3.712-3.84.896-2.688 1.408-10.368 1.408-14.72zM161.778 218h-5.248l.128-77.568L147.57 218h-5.12l-8.32-77.44.128 77.44h-5.12V115.6h6.784l9.344 83.584 9.728-83.584h6.784V218zm11.671-24.704c-.128 1.152-2.176 24.704-2.176 24.704h-5.504l10.496-102.4h7.168l7.936 102.4h-5.504s-1.664-23.552-1.664-24.704h-10.752zm10.624-4.992c0-.128-3.712-43.52-3.968-46.848-.384-4.48-.768-17.28-.768-17.28s-.256 12.8-.768 17.152c-.384 3.2-4.992 46.848-4.992 46.976h10.496zm29.59-67.2h-8.831V218H199.2v-96.896h-8.704V115.6h23.168v5.504zM223.8 218h-5.76V115.6h5.76V218zm18.582-102.784c7.936 0 11.776 4.48 11.904 16 0 4.864.128 25.216.128 35.328 0 11.008 0 29.568-.128 36.48-.128 10.496-3.584 15.744-11.904 15.744-8.064 0-11.52-4.864-11.648-15.872v-71.552c0-10.496 3.712-16.128 11.648-16.128zm.256 97.792c4.224 0 5.504-3.712 5.76-8.32.256-4.352.256-29.056.256-38.144 0-7.296 0-32.384-.128-36.608-.128-6.144-1.536-8.96-5.888-8.96-4.992 0-5.632 3.712-5.888 9.088-.256 4.352-.128 29.568-.128 36.992 0 8.064-.128 33.024.128 37.632.256 4.992 1.408 8.32 5.888 8.32zM283.748 218h-6.144l-11.136-78.208V218h-5.12V115.6h6.272l10.88 76.416V115.6h5.248V218zm25.902-24.704c-.128 1.152-2.176 24.704-2.176 24.704h-5.504l10.496-102.4h7.168L327.57 218h-5.504s-1.664-23.552-1.664-24.704H309.65zm5.888-69.12c0 .033-.257 12.806-.768 17.152-.384 3.2-4.992 46.848-4.992 46.976h10.496c0-.128-3.712-43.52-3.968-46.848-.384-4.474-.767-17.247-.768-17.28zm37.143 18.56c0 8.448-.768 14.72-1.664 17.152-1.024 2.816-2.432 5.632-4.224 6.272l8.192 51.84h-6.144l-7.424-50.048-4.224.128V218h-5.504V115.6h9.472c6.912 0 9.856 4.608 10.752 11.776.512 4.352.768 7.68.768 15.36zm-6.016 1.024c0-5.76-.384-13.952-.512-15.232-.384-4.224-2.048-7.296-4.992-7.296h-3.84v41.344s2.944 0 4.224-.256c2.304-.256 3.2-2.048 3.712-3.84.896-2.688 1.408-10.368 1.408-14.72zm35.863 42.368v17.152c0 10.368-4.48 15.36-11.776 15.36-7.808 0-11.392-4.864-11.648-13.568-.256-9.088-.256-29.696-.256-39.168V130.32c.128-11.904 4.736-15.104 11.776-15.104 7.68 0 11.52 4.736 11.776 14.08.128 6.144.128 12.544.128 18.304h-6.016c0-4.224.128-15.616-.128-19.84-.256-4.608-2.432-6.528-5.888-6.528-3.584 0-5.76 2.816-5.76 7.552-.128 4.48 0 29.568 0 37.248 0 8.192.128 34.176.256 36.992.384 7.808 2.432 9.856 5.888 9.856 3.072 0 5.888-1.536 5.888-10.496v-16.256h5.76zM410.582 218h-5.632v-49.024h-11.136V218h-5.632V115.6h5.632v48h11.136v-48h5.632V218zm13.591 0h-5.76V115.6h5.76V218zm27.415-96.896h-8.832V218h-5.632v-96.896h-8.704V115.6h23.168v5.504zM475.931 218h-19.968V115.6h19.84v5.504h-14.208v42.368h12.288v5.376h-12.288v43.648h14.336V218zm27.03-31.872v17.152c0 10.368-4.48 15.36-11.775 15.36-7.808 0-11.392-4.864-11.648-13.568-.256-9.088-.256-29.696-.256-39.168V130.32c.128-11.904 4.736-15.104 11.776-15.104 7.68 0 11.52 4.736 11.776 14.08.128 6.144.128 12.544.128 18.304h-6.016c0-4.224.128-15.616-.128-19.84-.256-4.608-2.432-6.528-5.888-6.528-3.584 0-5.76 2.816-5.76 7.552-.128 4.48 0 29.568 0 37.248 0 8.192.128 34.176.256 36.992.384 7.808 2.432 9.856 5.888 9.856 3.072 0 5.888-1.536 5.888-10.496v-16.256h5.76zm25.368-65.024h-8.832V218h-5.632v-96.896h-8.704V115.6h23.168v5.504zm26.134 85.376c0 7.552-3.456 12.16-10.88 12.16-7.424 0-11.52-4.096-11.52-12.16V115.6h5.632v89.344c0 6.272 1.92 8.192 5.76 8.192 3.968 0 5.376-2.304 5.376-8.064V115.6h5.632v90.88zm28.567-63.744c0 8.448-.768 14.72-1.664 17.152-1.024 2.816-2.432 5.632-4.224 6.272l8.192 51.84h-6.144l-7.424-50.048-4.224.128V218h-5.504V115.6h9.472c6.912 0 9.856 4.608 10.752 11.776.512 4.352.768 7.68.768 15.36zm-6.016 1.024c0-5.76-.384-13.952-.512-15.232-.384-4.224-2.048-7.296-4.992-7.296h-3.84v41.344s2.944 0 4.224-.256c2.304-.256 3.2-2.048 3.712-3.84.896-2.688 1.408-10.368 1.408-14.72zM609.933 218h-19.968V115.6h19.84v5.504h-14.208v42.368h12.288v5.376h-12.288v43.648h14.336V218z" fill="#FFF" fill-rule="evenodd"/></svg>
 					<span class="a11y-only">{{ title | safe }}</span>
 				</h1>
 				<p class="byline">
 					<span class="a11y-only">by:</span>
-					{{ byline | safe }}
+					{{ metadata.author.name | safe }}
 				</p>
 			</header>
 
-			{% if cover %}
-				{% if href %}
-				<a href="{{ href }}">
-				{% endif %}
-				<img class="cover" src="{{ cover }}" alt="Cover of {{ title | safe }} by {{ byline | safe }}.">
-				{% if href %}
+			{% if metadata.theme.cover %}
+				<a href="{{ metadata.abaurl }}">
+				<img class="cover" src="{{ metadata.theme.cover }}" alt="Cover of {{ metadata.title | safe }} by {{ metadata.byline.name | safe }}.">
 				</a>
-				{% endif %}
 			{% endif %}
 		</div>
 
@@ -96,19 +92,14 @@
 
 				{{ layoutContent | safe }}
 
-				{% if cta %}{% if href %}
-				<a class="cta" href="{{ href }}">{{ cta }}</a>
-				{% endif %}{% endif %}
-				{% if ctanote %}
-				<p class="note">{{ ctanote | safe }}</p>
-				{% endif %}
+				<a class="cta" href="{{ metadata.abaurl }}">{{ metadata.cta }}</a>
 			</main>
 
 			<footer class="site-foot">
 				<div class="blurbs">
-					{%- for intro in collections.blurb -%}
-						{% include "partials/people-are-saying.njk" %}
-					{%- endfor -%}
+					{% if metadata.headings.blurbs %}
+					<h2 class="blurbs-hed">{{ metadata.headings.blurbs | safe }}</h2>
+					{% endif %}
 
 					{%- for blurb in collections.blurbs -%}
 						{% include "partials/blurb.njk" %}
