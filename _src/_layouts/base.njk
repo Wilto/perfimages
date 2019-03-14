@@ -12,13 +12,13 @@
 		<!-- Twitter Card Stuff: -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="{{ metadata.author.twitter }}">
-		<meta name="twitter:image" content="{{ metadata.url}}/_assets/img/book-tease.png">
+		<meta name="twitter:image" content="{{ metadata.url }}{{ metadata.teaser }}">
 		<meta property="twitter:image:alt" content="Cover of {{ metadata.byline.title | safe }}, published by A Book Apart, written by {{ metadata.byline.name | safe }}.">
 		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta property="og:title" content="{{ metadata.title }}">
 		<meta property="og:url" content="{{ page.url }}">
 		<meta property="og:description" content="{{ lede }}">
-		<meta property="og:image" content="{{ metadata.url}}/_assets/img/book-tease.png">
+		<meta property="og:image" content="{{ metadata.url }}{{ metadata.teaser }}">
 		<meta property="og:image:alt" content="Cover of {{ metadata.byline.title | safe }}, published by A Book Apart, written by {{ metadata.byline.name | safe }}.">
 		<meta property="og:type" content="article">
 		<meta name="author" content="{{ metadata.author.name }}">

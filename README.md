@@ -5,13 +5,14 @@
 1. Fork this repo.
 2. Clone it
 3. Run `npm install`
-4. Run `eleventy --serve` and the site will be up and running locally—by default, at [localhost:8080](localhost:8080). 
+4. Run `eleventy --serve` and the site will be up and running locally—by default, at [localhost:8080](localhost:8080). The built site is in `_site`, and the source—the stuff you’ll want to change—is in `_src`
 
 ## Editing Your Website
 
+
 ### Metadata
 
-Most of the information for your site is in `_data/metadata.json`. You might need to re-run your local dev server after changing these values.
+Most of the information for your site is in `/_src/_data/metadata.json`. You might need to re-run your local dev server after changing these values.
 
 *`title`*
 It’s the title of your book.
@@ -41,6 +42,10 @@ This color is used for your excerpt page footer and some small accents. When in 
 
 *`cover`*
 The path to your book cover. You can snag the one from the ABA page for your book and drop it into `/_src/_assets/img/`.
+
+*`teaser`*
+The preview image that pops up when you drop a link to your excerpt site onto Slack or Twitter. For example:
+![](https://everydayinformationarchitecture.com/_assets/img/book-tease.jpg)
 
 ### `headings`
 
