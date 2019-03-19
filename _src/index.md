@@ -4,7 +4,7 @@ byline: Lisa Maria Martin
 volume: 29
 href: https://abookapart.com/products/everyday-information-architecture
 cover: _assets/img/book-cover.png
-cta: "Pre-orders open soon!"
+cta: "Pre-orders are now open!"
 lede: "“The creative organization of information creates new information,” wrote architect Richard Saul Wurman. This axiom is at the core of our work. When we organize information—that is, when we structure it, order it, display it, label it, connect it—we alter it. We change how information will be perceived, for better or for worse."
 ---
 
