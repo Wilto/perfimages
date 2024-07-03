@@ -1,5 +1,6 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_src/_assets");
+  eleventyConfig.addPassthroughCopy("_redirects");
 
     eleventyConfig.addCollection("blurbs", function(collection) {
       return collection.getAllSorted().filter(function(item) {
