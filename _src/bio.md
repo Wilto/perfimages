@@ -2,4 +2,4 @@
 title: About the Author
 ---
 
-[Lisa Maria Martin](https://thefutureislikepie.com/) is an independent consultant based in Boston. She practices content-driven information architecture, helping organizations to understand, organize, and structure their web content for empowering user experiences. She is the managing editor of A Book Apart, as well as a writer, speaker, workshop facilitator, and poet.
+[Lisa Maria Marquis](https://thefutureislikepie.com/) is an information architect and content strategist specializing in the structural analysis of digital systems, helping organizations to build findable, understandable, and usable content experiences. She is a consultant, speaker, workshop leader, and author of Everyday Information Architecture. She lives near Boston with her partner, two dogs, four chickens, and roughly ten thousand bees.
