@@ -102,9 +102,19 @@
 				{% if ctanote %}
 				<p class="note">{{ ctanote | safe }}</p>
 				{% endif %}
+
+				{%- for cta in collections.cta -%}
+				<div class="cta-where">
+					<h2 class="cta-hed">{{ cta.data.title }}</h2>
+
+					{{ cta.data.content | safe }}
+				</div>
+				{%- endfor -%}
 			</main>
 
+
 			<footer class="site-foot">
+
 				<div class="blurbs">
 					{%- for intro in collections.blurb -%}
 						{% include "partials/people-are-saying.njk" %}
